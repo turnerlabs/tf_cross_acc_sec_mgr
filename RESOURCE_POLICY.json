@@ -1,0 +1,12 @@
+{
+    "Version" : "2012-10-17",
+    "Statement" : [
+      {
+        "Effect": "Allow",
+        "Principal": {"AWS": "arn:aws:iam:us-east-1:account_b_number:role/account_b_role"},
+        "Action": "secretsmanager:GetSecretValue",
+        "Resource": "*",
+        "Condition": {"ForAnyValue:StringEquals": {"secretsmanager:VersionStage": "AWSCURRENT"}}
+      }
+    ]
+  }

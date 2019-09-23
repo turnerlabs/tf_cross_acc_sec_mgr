@@ -1,0 +1,15 @@
+{
+    "Version" : "2012-10-17",
+    "Statement" : [
+      {
+        "Effect": "Allow",
+        "Action": "secretsmanager:GetSecretValue",
+        "Resource": "arn:aws:secretsmanager:us-east-1:account_a_number:secret:secret_key_in_account_a"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "kms:Decrypt",
+        "Resource": "arn:aws:kms:us-east-1:account_a_number:key/guid_of_key_in_account_a"
+      }
+    ]
+  }
