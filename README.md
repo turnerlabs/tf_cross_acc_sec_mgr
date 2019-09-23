@@ -3,6 +3,7 @@
 This was created based on this web page(<https://aws.amazon.com/blogs/security/how-to-access-secrets-across-aws-accounts-by-attaching-resource-based-policies/)>
 
 __Account A is the account where your Secrets Manager Key is stored.__
+
 __Account B is the account trying to access the Secrets Manager key in Account A.__
 
 1. Create a KMS key in Account A.  I'd suggest clicking the rotate yearly checkbox but you need to be prepared to possibly change things when the rotation occurs.
