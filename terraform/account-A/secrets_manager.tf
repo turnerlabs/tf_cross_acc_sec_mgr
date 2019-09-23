@@ -25,7 +25,7 @@ resource "aws_secretsmanager_secret" "secretmanager_secret" {
     }
   ]
 }
-EOF  
+EOF
 }
 
 resource "aws_secretsmanager_secret_version" "secretmanager_secret_version" {

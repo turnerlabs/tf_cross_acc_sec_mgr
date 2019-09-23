@@ -102,5 +102,5 @@ resource "aws_kms_key" "kms_key" {
         }
     ]
 }  
-EOF  
+EOF
 }
